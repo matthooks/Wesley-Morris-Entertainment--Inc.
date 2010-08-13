@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+    <title>Wesley Morris Entertainment</title>
+    <meta name="description" content="">
+    <meta name="author" content="created by blackholeinthemidwest.com">
+    <meta name="google-site-verification" content="XGOkwz-gQ-w9VH3Wn3sE9HxDB2Th6ne8A6ms7ChE_0k" />
+
+    <!-- j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/stylesheets/reset.css" media="screen" rel="stylesheet" />
+    <link href="/stylesheets/styles.css" media="screen" rel="stylesheet" />
+    
+    <% if ENV['RACK_ENV'] == "production" %>
+    <%= erb(:'partials/google_analytics', :layout => false) %>
+    <% end %>
+    <script src="/javascripts/modernizr-1.5.min.js"></script>
+    
+    <%= yield_content :head %>
+  </head>
+ 
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>wesley morris entertainment, inc.</h1>
+
+        <p>
+          imagination &nbsp;&nbsp;
+          innovation &nbsp;&nbsp;
+          inspiration
+        </p>
+      </div>
+    </header>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <div class="container">
+        
+      </div>
+    </footer>
+
+    <% if ENV['RACK_ENV'] == "production" %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <% else %>
+    <script src="/javascripts/jquery-1.4.2.min.js"></script>
+    <% end %>
+    
+    <%= yield_content :tail %>
+  </body>
+</html>
