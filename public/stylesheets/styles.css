@@ -1,15 +1,16 @@
+/* #79a1b4 */
 /* #da1921 */
 
 html { overflow-y:scroll; }
 html, body { width:100%; height:100%; }
-body { position:relative; font:62.5% "Gill Sans", "Calibri", "Trebuchet MS", sans-serif; /* 1 em = 10px */ line-height:1.4; background-color:#fff; color:#000; -webkit-font-smoothing: antialiased; }
+body { position:relative; font:62.5% "Gill Sans", "Calibri", "Trebuchet MS", sans-serif; /* 1 em = 10px */ line-height:1.4; background-color:#79a1b4; color:#000; -webkit-font-smoothing: antialiased; }
 
 /* GENERAL */
 h1, h2, h3, h4, h5, h6 { font-weight:normal; font-family:"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
-a { color:#333; background-color:#eee; }
-a:hover { background-color:#da37a4; text-decoration:none; color:#fff; }
+a { color:#444; }
+a:hover { background-color:#000; text-decoration:none; color:#fff; }
 /*p { font-size:1.4em; }*/
-div.container { width:96em; margin:0 auto; }
+div.container { width:80em; margin:0 auto; }
 em { font-style:italic; }
 strong { font-weight:bold; }
 
@@ -18,15 +19,30 @@ strong { font-weight:bold; }
 .group { *zoom:1; } /* IE 6/7 */
 
 /* HEADER */
-header { padding:3em 0; }
-  header h1 { background-image:url(../images/logo.png); width:96em; height:20em; background-repeat:no-repeat; background-position:center center; text-indent:-9999em; margin-bottom:0.5em; }
-  header p { font-size:4em; color:#eee; text-align:center; font-family:"Baskerville", Times, "Times New Roman", serif; line-height:1; }
+header { padding-top:2em; background-color:#fff; }
+  header #logo { margin-bottom:2em; }
+  header h1 { background-image:url(../images/logo.png); width:50em; height:15.5em; background-repeat:no-repeat; background-position:center center; text-indent:-9999em; margin:0 auto; }
+  header p { width:25em; text-align:center; line-height:1; font-size:2em; }
+  header #navigation { float:left; width:100%; overflow:hidden; position:relative; }
+  header #navigation ul { clear:left; float:left; position:relative; left:50%; }
+    header #navigation li { text-align:center; float:left; position:relative; right:50%; }
+      header #navigation li a { display:block; font-size:1.6em; background-color:rgba(255,255,255,0.2); padding:0.5em 0.833em; }
+      header #navigation li a:hover { background-color:#79a1b4; color:#fff; }
+      header #navigation li a.active { background-color:#79a1b4; color:#fff; }
 
 /* SECTIONS */
-section { padding:3em 0; }
+#content { }
+section {
+  padding:3em 0;
+  background:-moz-linear-gradient(center bottom,rgb(121,161,180),rgb(238,238,238),rgb(121,161,180));
+  background:-webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(121,161,180)),color-stop(0.5, rgb(238,238,238)),color-stop(1, rgb(121,161,180)));
+  min-height:60em;
+}
   section h2 { font-size:3em; margin-bottom:0.75em; border-bottom:1px solid rgba(255,255,255,0.25); padding-bottom:0.25em; text-align:center; }
   section h3 { font-size:2.4em; margin-bottom:0.5em; text-align:center; }
 
+#home {}
+  #home h1 { font-size:4em; padding:1em 0; }
 #producers { background-color:#da1921; text-shadow:1px 1px 1px rgba(255,255,255,0.35); }
   #producers h3 {}
     #producers h3 a { background-color:transparent; color:rgba(0,0,0,0.25); text-decoration:none; text-shadow:none; }
@@ -35,13 +51,12 @@ section { padding:3em 0; }
     #producers ul li { margin-bottom:2em; }
     #producers ul li:last-child { margin-bottom:0; }
       #producers ul li p { padding:0 5em; font-size:1.8em; text-indent:2em; }
-#entertainment_credits { background-color:#026BA7; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.75); }
-#sports_credits { background-color:#E0DC30; text-shadow:1px 1px 1px rgba(255,255,255,0.5); }
-#sports_credits h2 { border-bottom:1px solid rgba(0,0,0,0.25); }
-#television_programming { background-color:#8D0208; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.75); }
+#entertainment_credits { }
+#sports_credits { }
+#television_programming { }
   #television_programming ul {}
     #television_programming ul li { font-size:1.6em; }
-#global_production { background-color:#085E8D; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.75); }
+#global_production { }
   #global_production h2 { text-align:center; }
   #global_production p { font-size:1.8em; text-align:center; }
 #contact_us {}

@@ -17,9 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 /* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
+:focus { outline: 1; }
 body {
 	line-height: 1;
 	color: black;
@@ -44,3 +42,6 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { display:block; }

@@ -25,13 +25,23 @@
 
     <header>
       <div class="container">
-        <h1>wesley morris entertainment, inc.</h1>
-
-        <p>
-          imagination &nbsp;&nbsp;
-          innovation &nbsp;&nbsp;
-          inspiration
-        </p>
+        <div id="logo">
+          <h1>wesley morris entertainment, inc.</h1>
+        </div>
+        <div class="group">
+          <div id="navigation">
+            <ul class="group">
+              <li><a href="/" class="<% if request.path_info == '/' %>active<% end %>">Home</a></li>
+          
+              <li><a href="/producers" class="<% if request.path_info == '/producers' %>active<% end %>">The Producers</a></li>
+              <li><a href="/entertainment" class="<% if request.path_info == '/entertainment' %>active<% end %>">Entertainment</a></li>
+              <li><a href="/sports" class="<% if request.path_info == '/sports' %>active<% end %>">Sports</a></li>
+              <li><a href="/programming" class="<% if request.path_info == '/programming' %>active<% end %>">Programming</a></li>
+              <li><a href="/global" class="<% if request.path_info == '/global' %>active<% end %>">Global</a></li>
+              <li><a href="/contact-us" class="<% if request.path_info == '/contact-us' %>active<% end %>">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
