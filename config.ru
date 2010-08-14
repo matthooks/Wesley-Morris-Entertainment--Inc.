@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/content_for'
 
-require 'wesleymorris'
+require 'wesleymorrisentertainment'
 require 'lib/nowww'
 
 use NoWWW
