@@ -42,6 +42,7 @@ section {
   section h3 { font-size:2.4em; margin-bottom:0.5em; text-align:center; }
 
 #home {}
+  #home .container { background-image:url(../images/unfaded_logo.png); }
   #home h1 { font-size:4.5em; padding:1em 0; color:#fff; text-shadow:2px 2px 3px #ddd; font-family:Arial, "Helvetica Neue", Helvetica, sans-serif; text-align:center; }
 #producers { }
   #producers h3 {}
@@ -52,9 +53,9 @@ section {
     #producers ul li:last-child { margin-bottom:0; }
       #producers ul li p { padding:0 4em; font-size:1.8em; text-indent:2em; line-height:1.3; }
 #entertainment_credits { }
-  #entertainment_credits .container .group { background-image:url(../images/entertainment.png); background-repeat:no-repeat; background-position:bottom right; }
+  #entertainment_credits .container .group { background-image:url(../images/entertainment_2.gif); background-repeat:no-repeat; background-position:bottom right; }
 #sports_credits { }
-  #sports_credits .container .group { background-image:url(../images/sports.png); background-repeat:no-repeat; background-position:center right; }
+  #sports_credits .container .group { background-image:url(../images/half_small_sports.gif); background-repeat:no-repeat; background-position:center right; }
 #television_programming { }
   #television_programming ul { margin:3em 0 5em 0; }
     #television_programming ul li { font-size:1.6em; float:left; margin-right:0.5em; }
@@ -64,12 +65,13 @@ section {
   #global_production img { border:2px solid #000; margin:0 auto; display:block; margin-bottom:1em; }
   #global_production p { font-size:1.6em; text-align:center; }
 #contact_us {}
+  #contact_us .container { background-image:url(../images/unfaded_logo.png); }
   #contact_us h2 { text-align:center; border-bottom-color:rgba(0,0,0,0.25); }
-  #contact_us ul {}
+  #contact_us ul { padding:1em 0; }
     #contact_us ul li { float:left; width:33%; text-align:center; }
-      #contact_us ul li h4 { font-size:2em; }
-      #contact_us ul li a { font-size:1.4em; }
-      #contact_us ul li p { font-size:1.8em; }
+      #contact_us ul li h4 { font-size:3em; }
+      #contact_us ul li a { font-size:1.5em; }
+  #contact_us h3 { font-size:4em; }
 
 /* categories */
 .category { float:left; width:30%; text-align:center; }
