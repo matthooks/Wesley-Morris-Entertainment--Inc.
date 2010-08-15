@@ -43,7 +43,8 @@ section {
 
 #home {}
   #home .container { background-image:url(../images/unfaded_logo.png); }
-  #home h1 { font-size:4.5em; padding:1em 0; color:#fff; text-shadow:2px 2px 3px #ddd; font-family:Arial, "Helvetica Neue", Helvetica, sans-serif; text-align:center; }
+  #home .container div { font-size:4.5em; padding:1em 0; color:#fff; text-shadow:2px 2px 3px #ddd; font-family:Arial, "Helvetica Neue", Helvetica, sans-serif; float:left; width:33%; display:none; }
+  #home .container div p { }
 #producers { }
   #producers h3 {}
     #producers h3 a { background-color:transparent; color:rgba(0,0,0,0.25); text-decoration:none; text-shadow:none; }
