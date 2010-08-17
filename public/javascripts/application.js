@@ -1,9 +1,9 @@
 $(document).ready(function (){
 
-  var c = $('#home .container').children('div');
+  var cells = $('#home table tr td').children('span');
   
-  $(c.get(0)).delay(500).show('scale');
-  $(c.get(1)).delay(1000).show('scale');
-  $(c.get(2)).delay(1500).show('scale');
+  $(cells.get(0)).delay(500).fadeIn();
+  $(cells.get(1)).delay(1000).fadeIn();
+  $(cells.get(2)).delay(1500).fadeIn();
   
 });
