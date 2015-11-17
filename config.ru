@@ -2,8 +2,8 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/content_for'
 
-require 'wesleymorrisentertainment'
-require 'lib/nowww'
+require './wesleymorrisentertainment'
+require './lib/nowww'
 
 before do
   if ENV['RACK_ENV'] == "production"
