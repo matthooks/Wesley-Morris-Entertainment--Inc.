@@ -52,7 +52,8 @@ section { padding:3em 0; min-height:60em; position:relative; text-shadow:2px 2px
     #producers ul li:last-child { margin-bottom:0; }
       #producers ul li div { width:65em; margin:0 auto; padding-bottom:2em; border-bottom:1px solid rgba(255,255,255,0.25); }
       #producers ul li:last-child div { border:none; }
-        #producers ul li div p { font-size:1.8em; text-indent:2em; line-height:1.3; }
+        #producers ul li div p { font-size:1.8em; text-indent:2em; line-height:1.3; margin-bottom: 1rem; }
+        #producers ul li div p:last-child { margin-bottom: 0; }
 #entertainment_credits {}
   #entertainment_credits .container .group { background-image:url(../images/entertainment_2.gif); background-repeat:no-repeat; background-position:bottom right; }
 #sports_credits {}
